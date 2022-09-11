@@ -6,9 +6,12 @@ interface MangaProps {
 }
 
 export class Manga {
-  public props: MangaProps
+  public name!: string
+  public cover!: string
+  public description?: string
+  public chapters?: number[]
 
   constructor (props: MangaProps) {
-    this.props = props
+    Object.assign(this, props)
   }
 }
