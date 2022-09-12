@@ -11,7 +11,7 @@ export class QueryMangaByTitleUseCase {
     const mangas = await this.mangaProviderRepository.queryMangaByTitle(data.title)
 
     if (!mangas) {
-      throw new Error('Manga not found.')
+      throw new Error('Query not found.')
     }
 
     return mangas

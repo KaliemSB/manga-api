@@ -1,8 +1,8 @@
-import { UnionMangasRepository } from '../../repositories/implementations/unionMangasRepository'
+import { MangaHostRepository } from '../../repositories/implementations/mangaHostRepository'
 import { QueryMangaByTitleController } from './queryMangaByTitleController'
 import { QueryMangaByTitleUseCase } from './queryMangaByTitleUseCase'
 
-const mangaProvider = new UnionMangasRepository()
+const mangaProvider = new MangaHostRepository()
 
 const queryMangaByTitleUseCase = new QueryMangaByTitleUseCase(mangaProvider)
 
