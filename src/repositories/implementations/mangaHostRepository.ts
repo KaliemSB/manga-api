@@ -53,7 +53,8 @@ export class MangaHostRepository implements IMangaProviderRepository {
         chapters
       })
     } catch (error) {
-      throw new Error('Algo deu errado com a Union Mangas.')
+      console.log(error)
+      throw new Error('Algo deu errado com a Manga Host.')
     }
   }
 
@@ -72,7 +73,7 @@ export class MangaHostRepository implements IMangaProviderRepository {
         })
       })
     } catch (error) {
-      throw new Error('Algo deu errado com a Union Mangas.')
+      throw new Error('Algo deu errado com a Manga Host.')
     }
   }
 }
