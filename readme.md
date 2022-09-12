@@ -1,7 +1,7 @@
 
 # Manga API
 
-API feita em Node com o proposito de encapsular e centralizar a resposta de varios provedores de mangas
+API feita em Node com o propósito de encapsular e centralizar a resposta de vários provedores de mangas
 
 
 ## Stack utilizada
@@ -11,7 +11,7 @@ API feita em Node com o proposito de encapsular e centralizar a resposta de vari
 
 ## Documentação da API
 
-#### Retorna mangas filtrados pelo titulo
+#### Retorna mangas filtrados pelo título
 
 ```http
   GET /query/:title
@@ -19,9 +19,9 @@ API feita em Node com o proposito de encapsular e centralizar a resposta de vari
 
 | Parâmetro   | Tipo       | Descrição                           |
 | :---------- | :--------- | :---------------------------------- |
-| `title` | `string` | **Obrigatório**. titulo do manga |
+| `title` | `string` | **Obrigatório**. título do manga |
 
-#### Retorna as informações de um manga e seus capitulos
+#### Retorna as informações de um manga e seus capítulos
 
 ```http
   GET /manga/:slug
@@ -31,7 +31,7 @@ API feita em Node com o proposito de encapsular e centralizar a resposta de vari
 | :---------- | :--------- | :------------------------------------------ |
 | `slug`      | `string` | **Obrigatório**. slug que pode ser obtido no endpoint de busca |
 
-#### Retorna todas as paginas de um capitulo
+#### Retorna todas as paginas de um capítulo
 
 ```http
   GET /manga/:slug/:chapter
@@ -40,7 +40,7 @@ API feita em Node com o proposito de encapsular e centralizar a resposta de vari
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
 | `slug`      | `string` | **Obrigatório**. slug que pode ser obtido no endpoint de busca |
-| `chapter`   | `string` | **Obrigatório**. numero do capitulo que pode ser obtido no endpoint de manga |
+| `chapter`   | `string` | **Obrigatório**. numero do capítulo que pode ser obtido no endpoint de manga |
 
 
 ## Rodando localmente
