@@ -48,13 +48,13 @@ API feita em Node com o proposito de encapsular e centralizar a resposta de vari
 Clone o projeto
 
 ```bash
-  git clone https://link-para-o-projeto
+  git clone https://github.com/KaliemSB/manga-api
 ```
 
 Entre no diretório do projeto
 
 ```bash
-  cd my-project
+  cd manga-api
 ```
 
 Instale as dependências
@@ -66,7 +66,7 @@ Instale as dependências
 Inicie o servidor
 
 ```bash
-  npm run start
+  npm run dev
 ```
 
 
